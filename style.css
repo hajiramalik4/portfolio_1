@@ -415,6 +415,7 @@ a {
 .neutral-header-cell {
     padding: 20px;
     /* 20px padding all around as requested */
+    padding-left: 30px;
     grid-row: 1;
     font-size: 14px;
     font-weight: 500;
