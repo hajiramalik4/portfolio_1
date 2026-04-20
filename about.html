@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hajira malik — about</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="about-page">
+
+    <div class="layout">
+
+        <!-- Fixed Corner Elements -->
+        <div class="fixed-element top-right">
+            <img src="images/urdu_name_correct.png" alt="Hajira Malik in Urdu" class="urdu-name-img">
+        </div>
+
+        <div class="fixed-element top-left">
+            <div class="english-name">hajira malik
+                <div class="pronunciation-tooltip">pronounced <s>hajeera</s> haj-ra<br>
+                    <span class="def-italic">emigration, flight</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Boxed Navigation (Global) -->
+        <nav class="boxed-nav">
+            <a href="about.html" class="nav-box icon-box">i</a>
+            <a href="projects.html" class="nav-box link-box">projects</a>
+        </nav>
+
+        <main class="about-container">
+            <!-- Main Top Grid -->
+            <div class="about-top-grid">
+
+                <!-- Column 1: Bio -->
+                <div class="about-bio-col">
+                    <p>As a lil teen I used to binge-watch social impact ads from India and Pakistan. Something about
+                        how they challenged norms and activated public conversation stayed with me. That's probably
+                        where this started.
+                    </p>
+                    <p class="about-sectionIndent">
+                        I grew up in a space where global and Western perspectives were more visible than local ones.
+                        Some realities felt distant even when they were close. Being from a minority background made
+                        questions of representation, power, and voice feel immediate. I became aware early on that
+                        meaning is never neutral, and that led me to study communication science at the University of
+                        Amsterdam, where I explored more structurally how media, culture, and public opinion shape each
+                        other. I now work across research, communications, and creative strategy, moving between
+                        analysis and execution to translate audience insight into campaigns and content that are
+                        intentional, research‑driven, and grounded in context.
+                    </p>
+                    <div class="about-contact" style="margin-top: 10px;">
+                        amsterdam, islamabad<br>
+                        <a href="mailto:hajiramalik4@outlook.com">hajiramalik4@outlook.com</a><br>
+                        <a href="https://www.linkedin.com/in/hajiramalik" target="_blank">linkedin</a><br>
+                        <a href="https://www.instagram.com/hajiraa.malik/" target="_blank">instagram</a>
+                    </div>
+                </div>
+
+
+
+                <!-- Column 3: Video Block -->
+                <div class="about-img-col">
+                    <a href="https://youtu.be/-_3PZiXKd8U?si=nVyexoThPWmWG-Qh" target="_blank" class="about-video-link">
+                        <div class="about-video-block">
+                            <video muted loop playsinline>
+                                <source src="images/straatvolkunst2025.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bottom Moodboard Gallery -->
+            <section class="moodboard-section">
+                <div class="moodboard-grid">
+                    <div class="moodboard-item" data-artist="Saim Sadiq" data-title="Joyland" data-year="2022"
+                        data-medium="Film Still" data-dims="16:9">
+                        <img src="images/JOYLAND.jpg" alt="Joyland Poster">
+                    </div>
+                    <div class="moodboard-item" data-artist="Pakeezah" data-title="Aik Aur Pakeezah" data-year="2024"
+                        data-medium="Mixed Media" data-dims="Square">
+                        <img src="images/aikaurpakeezah.jpg" alt="Aik Aur Pakeezah">
+                    </div>
+                    <div class="moodboard-item" data-artist="Mood Section" data-title="Exhibition Observation"
+                        data-year="2025" data-medium="Photography" data-dims="Variable">
+                        <img src="images/about_1.jpg" alt="Mood Gallery">
+                    </div>
+                    <div class="moodboard-item mb-small" data-artist="Hajira Malik" data-title="Pink Chai"
+                        data-year="2025" data-medium="Digital Video" data-dims="Vertical">
+                        <video src="images/pink chai.mp4" muted loop playsinline></video>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    </div>
+
+    <!-- Moodboard Lightbox Viewer -->
+    <div id="moodboard-lightbox" class="lightbox-overlay">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-main">
+            <div class="lightbox-content">
+                <img id="lightbox-img" src="" alt="">
+                <video id="lightbox-video" src="" autoplay muted loop playsinline></video>
+                <div id="lightbox-caption" class="lightbox-caption"></div>
+            </div>
+            <div class="lightbox-nav">
+                <button id="lightbox-prev" class="nav-arrow">&lt;</button>
+                <button id="lightbox-next" class="nav-arrow">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
