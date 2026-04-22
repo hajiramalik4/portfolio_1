@@ -216,6 +216,22 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('resize', () => {
             syncOpenHeights();
         });
+
+        // Video Play-on-Hover for Project Videos
+        const projectVideos = document.querySelectorAll('.project-video-hover');
+        projectVideos.forEach(videoBlock => {
+            const video = videoBlock.querySelector('video');
+            if (video) {
+                videoBlock.addEventListener('mouseenter', () => {
+                    video.play().catch(e => console.log("Auto-play blocked", e));
+                });
+
+                videoBlock.addEventListener('mouseleave', () => {
+                    video.pause();
+                    video.currentTime = 0;
+                });
+            }
+        });
     }
 
     /* --- Random Gallery Logic (Shrink & Shift) --- */

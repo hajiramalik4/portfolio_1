@@ -755,6 +755,19 @@ a {
     /* keeps link clickable */
 }
 
+.project-video-hover {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-video-hover video {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
 #bg-video,
 #bg-image {
     display: none;
