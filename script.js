@@ -44,11 +44,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 lightboxVideo.src = video.src;
                 lightboxVideo.style.display = 'block';
                 lightboxImg.style.display = 'none';
+                // Store YouTube URL if available
+                lightboxVideo.dataset.youtubeUrl = video.dataset.youtubeUrl || '';
             } else if (img) {
                 lightboxImg.src = img.src;
                 lightboxImg.style.display = 'block';
                 lightboxVideo.style.display = 'none';
                 lightboxVideo.src = ""; // Stop video if switching to image
+                lightboxVideo.dataset.youtubeUrl = '';
             }
 
             // Build Exhibition Style Caption
@@ -100,6 +103,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
         if (prevBtn) prevBtn.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
         if (nextBtn) nextBtn.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
+
+        // YouTube link for lightbox videos
+        if (lightboxVideo) {
+            lightboxVideo.addEventListener('click', (e) => {
+                const youtubeUrl = lightboxVideo.dataset.youtubeUrl;
+                if (youtubeUrl) {
+                    window.open(youtubeUrl, '_blank');
+                    e.stopPropagation();
+                }
+            });
+        }
 
         // Close on backdrop click (outside content)
         if (lightbox) {
