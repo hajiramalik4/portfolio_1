@@ -466,6 +466,7 @@ a {
 
 .neutral-body-text .indent-para {
     text-indent: 1.5em;
+    font-weight: 600;
     /* Traditional left indent for paragraphs */
 }
 
@@ -822,10 +823,9 @@ a {
 
 .about-contact {
     font-size: clamp(14px, 4vw, 20px);
-    font-weight: 300;
+    font-weight: 600;
     line-height: 1.6;
     margin-top: 0;
-    font-style: bold;
     /* Margin handled by parent wrapper */
 }
 
@@ -1253,6 +1253,7 @@ a {
     line-height: 1.6;
     margin-bottom: 10px;
     padding: 0 !important;
+    font-weight: 700;
     /* Override previous container padding */
 }
 
